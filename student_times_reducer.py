@@ -18,7 +18,7 @@ def print_key_value(old_key, hour_counts):
     # For each hour with the most visits...
     for hour in hours_most_visits:
 
-	    # ...print a key-value pair
+	# ...print a key-value pair
         print '{0}\t{1}'.format(old_key, hour)
 
 # For every line in the standard input...
