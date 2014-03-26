@@ -26,6 +26,6 @@ for line in reader:
       	elif node_type == 'answer':
       	    key = line[6]
 
-    # ... print the key-values pair for questions and answers
-  	if node_type == 'question' or node_type == 'answer':
-              print '{0}\t{1}\t{2}'.format(key, node_type, body_length)
+        # ... print the key-values pair for questions and answers
+      	if node_type == 'question' or node_type == 'answer':
+            print '{0}\t{1}\t{2}'.format(key, node_type, body_length)
