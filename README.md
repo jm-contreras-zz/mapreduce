@@ -10,15 +10,15 @@ Forum Data
 ----------
 - **average_length_mapper.py** and **average_length_reducer.py** count the length of every question and compute the average length of the answers to each question. Reuslts are output in three columns: (1) *question ID*, (2) *question length*, and (3) *mean answer length*. Questions without answers receive an average answer length of zero.
 
+- **popular_tags_mapper.py** and **popular_tags_reducer.py** count the number of times each tag is applied to a post by its author and keep track of the *N*-most popular tags, where *N* = the number of tags to output. Results are output in two columns, sorted by popularity: (1) *tag* and (2) *number of posts with the tag*.
+
 - **inverted_index_mapper.py** and **inverted_index_reducer.py** count the number of times a term appears in posts (e.g., 'fantastic') and keep track of the posts in which the term appears. Two results are output: (1) *term count* and (2) *list of posts in which the term appears*.
 
+- **student_times_mapper.py** and **student_times_reducer.py** count the number of times that each user posts at the different hours of the day and finds the hour at which each user posted most often. Results are output in two columns: (1) *user ID* and (2) *hour with the most posts*. Hours that tie are output as different records.
+
+- **study_groups_mapper.py** and **study_groups_reducer.py** create a list of the users who interacted via a question; that is, for each question, the list includes the ID of the user who asked the question and the IDs of the users who answered and the users who commented on the question and the answers. Results are output in two columns: (1) *question ID* and (2) *list of user IDs*.
+
 - **combine_mapper.py** and **combine_reducer.py** output information from *forum_node* about the posts and combine it with the reputation statistics of their authors from *forum_node*.
-
-- **popular_tags_mapper.py** and **popular_tags_reducer.py**
-
-- **student_times_mapper.py** and **student_times_reducer.py**
-
-- **study_groups_mapper.py** and **study_groups_reducer.py**
 
 Web Log Data
 ------------
