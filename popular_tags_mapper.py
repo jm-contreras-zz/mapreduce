@@ -16,7 +16,7 @@ for line in reader:
     # ...that has 19 fields...
     if len(line) == 19:
 
-  	    # ...split the tag names by whitespace into a list
+        # ...split the tag names by whitespace into a list
         tagnames = line[2].split(' ')
 
     	# ...and print each one as a key
