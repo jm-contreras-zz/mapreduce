@@ -19,8 +19,8 @@ for line in csv.reader(sys.stdin, delimiter='\t'):
     	# ...write the relevant lines to the standard output
 	writer.writerow([line[0]] + ['A'] + line[1:])
 
-	# ...if it is part of forum_node, which has 19 lines
-    	elif len(line) == 19:
+    # ...if it is part of forum_node, which has 19 lines
+    elif len(line) == 19:
 
     	# ...write the relevant lines to the standard output
 	writer.writerow([line[3]] + ['B'] + line[:3] + line[5:10])
