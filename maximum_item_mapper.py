@@ -13,7 +13,7 @@ for line in sys.stdin:
     if len(data) == 6:
 
         # ...unpack them
-        date, time, store, item, cost, payment = data
+        date, time, store, item, price, payment = data
 
         # ...print the key-value pair
-        print '{0}\t{1}'.format(item, cost)
+        print '{0}\t{1}'.format(item, price)
