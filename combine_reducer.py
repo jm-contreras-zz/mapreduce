@@ -31,4 +31,4 @@ for line in sys.stdin:
     if key_A == key_B:
 
         # ...output the results
-	    writer.writerow(data_B[:3] + [key_A] + data_B[3:] + data_A)
+	writer.writerow(data_B[:3] + [key_A] + data_B[3:] + data_A)
