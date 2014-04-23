@@ -18,5 +18,6 @@ for line in sys.stdin:
         
         # ...declare the day of the week
 	day = datetime.strptime(date, '%Y-%m-%d').weekday()
-	    
+	   
+	# ...print the key-value pair
         print '{0}\t{1}'.format(day, cost)
