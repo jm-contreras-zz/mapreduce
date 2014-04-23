@@ -17,6 +17,6 @@ for line in sys.stdin:
         date, time, store, item, cost, payment = data
         
         # ...declare the day of the week
-	    day = datetime.strptime(date, '%Y-%m-%d').weekday()
+	day = datetime.strptime(date, '%Y-%m-%d').weekday()
 	    
         print '{0}\t{1}'.format(day, cost)
