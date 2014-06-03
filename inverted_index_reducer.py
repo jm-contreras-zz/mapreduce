@@ -15,7 +15,7 @@ for line in sys.stdin:
     data = line.strip().split('\t')
     
     # ...if it has two values
-    if len(data_mapped) == 2:
+    if len(data) == 2:
     
         # ...unpack them
         question_ID, this_term = data
@@ -26,6 +26,8 @@ for line in sys.stdin:
             # ...increase the count by 1 and append the question ID to the list
             term_count += 1
             term_question_IDs.append(int(question_ID))
-
+            
+# Sort the list
+term_question_IDs.sort()
 # Print the key-value pair after the final line
-print '{0}\t{1}'.format(term_count, term_question_IDs.sort())
+print '{0}\t{1}'.format(term_count, term_question_IDs)
