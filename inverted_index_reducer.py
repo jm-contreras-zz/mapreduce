@@ -29,5 +29,6 @@ for line in sys.stdin:
             
 # Sort the list
 term_question_IDs.sort()
+
 # Print the key-value pair after the final line
 print '{0}\t{1}'.format(term_count, term_question_IDs)
